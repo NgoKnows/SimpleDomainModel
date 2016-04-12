@@ -24,7 +24,7 @@ class PersonTests: XCTestCase {
     matt.spouse = Person(firstName: "Bambi", lastName: "Jones", age: 42)
     XCTAssert(matt.spouse == nil)
   }
-  
+
   func testAdultAgeRestrictions() {
     let mike = Person(firstName: "Michael", lastName: "Neward", age: 22)
     
@@ -50,7 +50,7 @@ class FamilyTests : XCTestCase {
     let familyIncome = family.householdIncome()
     XCTAssert(familyIncome == 1000)
   }
-  
+
   func testFamilyWithKids() {
     let ted = Person(firstName: "Ted", lastName: "Neward", age: 45)
     ted.job = Job(title: "Gues Lecturer", type: Job.JobType.Salary(1000))
